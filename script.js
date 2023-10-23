@@ -59,33 +59,13 @@ function headerblock(){
     var black = document.getElementsByClassName(".intro");
 
 }
-// // Get all the <a> elements in the main-list
-// var links = document.querySelectorAll(".main-list a");
 
-// // Get the "C" link and the rest of the links
-// var cLink = document.querySelector(".main-list a[href='./c-program.html']");
-// var otherLinks = document.querySelectorAll(".main-list a:not([href='./c-program.html'])");
+// Get all elements with the class "stopper"
+var stoppers = document.querySelectorAll(".stopper");
 
-// // Add click event listeners for "C" and other links
-// cLink.addEventListener("click", function (event) {
-//     // No need to prevent default behavior for navigation
-//     // because it's a real link
-//     // Allow the link to navigate to the provided URL
-// });
-
-// otherLinks.forEach(function (link) {
-//     link.addEventListener("click", function (event) {
-//         event.preventDefault(); // Prevent default behavior of other linksg
-
-//         // Get the text content of the clicked link
-//         var text = link.textContent.trim();
-
-//         // Show an alert for other options except "C"
-//         alert("Unfortunately,this language has not been updated yet");
-//     });
-// });
-var alarm = document.getElementsByClassName(".stopper");
-alarm.addEventListener("click", () =>{
-    alert("Unfortunately,this language has not been updated yet")
-
-})
+// Add a click event listener to each "stopper" element
+stoppers.forEach(function (element) {
+    element.addEventListener("click", function () {
+        alert("Unfortunately, this language has not been updated yet");
+    });
+});
