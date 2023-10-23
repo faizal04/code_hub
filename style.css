@@ -281,3 +281,6 @@ header a:hover+.anchor-hover{
     display: flex;
     flex: 1 1 10rem;
 }
+pre h3{
+    overflow-x: visible;
+}
