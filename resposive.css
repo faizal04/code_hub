@@ -1,0 +1,102 @@
+@media screen and (max-width: 900px) {
+.intro{
+    overflow-y: hidden;
+    min-height: 15vh;
+    width: 90%;
+    padding: 0.5rem;
+    word-spacing: 0.2rem;
+    display: flex;
+    align-items: center;
+}
+.intro-coder{
+    width: 90vw;
+}
+.language-c{
+    min-height: 20vh;
+    min-width: 60vw;
+}
+
+}   
+@media screen and (max-width: 500px) {
+    .intro{
+        overflow-y: hidden;
+        min-height: 20vh;
+        width: 90%;
+        word-spacing: 0.2rem;
+    }
+    .section1 a{
+        font-size: 1rem;
+    }
+    .logo .img img{
+        height: 2rem;
+
+    }
+    .language-c{
+    min-height: 20vh;
+   min-width: 80vw;
+        font-size: 1px;
+}
+.options {
+   position: absolute;
+   left: -50%;
+ width: 50vw;
+ z-index: 1;
+ position: fixed;
+}
+.navbar h2{
+  font-size: 1.3rem
+}
+/* Specify the font size for text within the <code> tag */
+.language-c code{
+    font-size: 13px;
+}
+
+    }  
+    @media screen and (max-width: 350px) {
+      .navbar a{
+        display: none;
+      }
+        
+      
+    }
+    
+    
+
+   
+  @media screen and (min-width: 501px) and (max-width: 900px) {
+    .hamburger {
+      display: block;
+      width: 50vw;
+      left: -50vw; /* Adjust the left position */
+    }
+  }
+  
+  /* Styles for screens 500px or narrower */
+  @media screen and (max-width: 500px) {
+    .hamburger {
+      display: block;
+      width: 50vw;
+      left: -50vw; 
+  }
+}
+  
+ 
+  
+  @keyframes slideLeft {
+    0% {
+      left: -50vw;
+    }
+    100% {
+      left: 0%;
+    }
+  }
+  
+  @keyframes slideRight {
+    0% {
+      left: 0%;
+    }
+    100% {
+      left: -50vw;
+    }
+}
+  

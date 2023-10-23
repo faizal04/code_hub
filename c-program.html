@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./prism-lib.css">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="./resposive.css">
+</head>
+<body>
+    <header class="navbar">
+        <h2>C Programing</h2>
+        <!-- <a href="./index.html"><li>HOME</li></a> -->
+      
+                    <a href="https://faisalharray.netlify.app/">
+                        <ul> 
+                            <li>PORTFOLIO</li>
+                        </ul></a>
+       
+    </div>
+</header>
+<div class="program-center">
+    <div class="options">
+        <a href="#" onclick="showProgram('program')">learn</a>
+        <a href="#" onclick="showProgram('section2')">basic</a>
+        <a href="#" onclick="showProgram('program-advance')">advanced</a>
+        <a href="#" onclick="showProgram('section-project')">project</a>
+    </div>
+
+    <div class="code-level" id="code-level" onclick="openSlide()"><img src="./logo/icons8-menu-48.png" alt=""></div>
+
+    <div class="intro-coder"  >
+        <span class="highlighted-text">
+            Hello, aspiring coders!
+            <br>
+        </span>
+        
+        <h3 >
+        The code examples below are designed for learning purposes and may not run directly in your terminal.<br> This section serves as a foundation for your programming journey.<br> If you've already grasped these concepts, feel free to explore our collection of basic programs.
+        
+        We invite you to keep learning and growing with us. Stay tuned for more exciting content and happy coding!
+    </h3>
+</div>
+    <section class="program">
+        <pre class="gap-maintain">
+        <h3>PRINT HELLO WORLD IN C</h3>
+          <code class="language-c" >
+        
+              #include&lt;stdio.&gt;
+              int main(){
+                  printf("HELLO CODERS");
+                  // in c to print something we have use printf and its syntax
+                  return 0;
+                }
+            </code>
+        </pre>
+        
+        <pre class="gap-maintain">
+            <h3>USE OF SCANF IN C </h3>
+            
+            <code class="language-c" >
+                #include&lt;stdio.&gt;
+                int main(){
+                    int num;
+                    printf("Enter a number: ");
+                    scanf("%d", &num);
+                    printf("You entered: %d\n", num);
+                    return 0;
+                }
+                // C provides functions like scanf and printf to read input from the user and display output on the screen.
+                // return 0; is often used as the exit status code of the main function.
+                
+            </code>
+        </pre>
+        <pre>
+            <h3>CHECK USING IF CONDITION</h3>
+            
+            <code class="language-c">
+                #include&lt;stdio.&gt;
+                int main(){
+                    
+                    if (/*condition*/) {
+                        // Code to execute if condition is true
+                    } else {
+                        // Code to execute if condition is false
+                    }
+                    // C allows you to use conditional statements like if, else if, and else to make decisions in your program.
+                    return 0;
+                }
+                
+                
+            </code>
+        </pre>
+                                                <pre>
+                                                    <H3>FOR LOOP IN C </H3>
+                                                    <code class="language-c" >
+                                                        for (int i = 0; i < 5; i++) {
+                                                            // Code to execute in a loop
+                                                        }
+                                                        // C supports various types of loops, including for, while, and do-while, which allow you to execute a block of code repeatedly.
+                                                        
+                                                        
+                                                    </code>
+                                                </pre>
+                                                                    <pre>
+                                                                        <H3>ARRAY IN C  </H3>
+
+                                                                        <code class="language-c">
+                                                                            int numbers[5] = {1, 2, 3, 4, 5};
+                                                                            // C supports arrays, which allow you to store multiple values of the same data type in a single variable.
+                                                                            
+                                                                        </code>
+                                                                    </pre>
+                                                                    <pre>
+                                                                        <H3>DATA TYPES IN C </H3>
+                                                                        
+                                                                        <code class="language-c" >
+                                                                            int age = 30;
+                                                                            float price = 19.99;
+                                                                            char grade = 'A';
+                                                                            // C supports various data types, including integers, floating-point numbers, characters, and more. You can declare variables and assign values to them.
+                                                                        </code>
+                                                                    </pre>
+                                                                                                            <pre>
+                                                    <H3>STRUCTURES IN C </H3>
+                                                    
+                                                    <code class="language-c" >
+                    struct Person {
+                        char name[50];
+                        int age;
+                    };
+                    // Structures in C allow you to create custom data types that can hold multiple variables with different data types.
+                                                                                                                                </code>
+                                                                                                                            </pre>
+                                                                                                                            <pre>
+                <H3>POINTERS IN C </H3>
+                <code class="language-c" >
+                                                                                                                                        int x = 10;
+                                                                                                                                        int *ptr = &x; // Pointer to an integer
+                                                                                                                                        // Pointers are a crucial concept in C. They allow you to work with memory addresses and perform operations like dynamic memory allocation.
+                                                                                                                                    </code>
+                                                                                                                                                    </pre>
+                                                                                                                                                    <pre>
+                                                    <H3>FUNCTIONS IN C </H3>
+                                                    
+                                                                                                                                                        <code class="language-c" >
+                                                                                                                                                            int add(int a, int b) {
+                                                                                                                                                                return a + b;
+                                                                                                                                                            }
+                                                                                                                                                            // You can define your own functions in C to encapsulate blocks of code and make your program modular.
+                                                                                                                                                                        </code>
+                                                                                                                                                                        </pre>
+                                                                                                                                                                        <pre>
+                                                                                                                                                                            <H3>FUNCTION FOR READING AND WRITING IN FILES  IN C </H3>
+                                                                                                                                                                            
+                                                                                                                                                                            <code class="language-c" >
+                                                                                                                                                                                FILE *file = fopen("data.txt", "r");
+                                                                                                                                                                                if (file != NULL) {
+                                                                                                                                                                                    // Read or write data
+                                                                                                                                                                                    fclose(file);
+                                                                                                                                                                                }
+                                                                                                                                                                                // C provides functions for reading from and writing to files, allowing you to work with external data files.
+                                                                                                                                                                                            </code>
+                                                                                                                                                                                            </pre>
+                            
+                                                                                                                                                                                            
+                                                                                                                                                                                            
+                                                                                                                                                                                        </section>
+                                                                                                                                                                                        <section class="section2">
+                                                                                                                                                                                           
+                                                                                                                                                                                            <pre class="language-c" >
+                                                                                                                                                                                                <h3>ADDITION OF TWO NUMBERS</h3>
+                                                                                                                                                                                                <code>
+                                                                                                                                                                                                    #include&lt;stdio.h&gt;
+                                                                                                                                                                                                    
+                                                                                                                                                                                                    int main(){
+                                                                                                                                                                                                        int a, b,c;
+                                                                                                                                                                                                        printf("enter the value of first number");
+                                                                                                                                                                                                        scanf("%d",&a);
+                                                                                                                                                                                                        printf("enter the value of second number");
+                                                                                                                                                                                                        scanf("%d",&b);
+                                                                                                                                                                                                        c = a + b;
+                                                                                                                                                                                                        printf("the addition of two numbers you entered are %d", c);
+                                                                                                                                                                                                        return 0;
+                                                                                                                                                                                                    }
+                                                                                                                                                                                                </code>
+                                                                                                                                                                                            </pre>
+                                                                                                                                                                                            
+                                                                                                                                                                                            <pre class="language-c" >
+                                                                                                                                                                                                <h3>FIND AVERAGE OF ARRAY ELEMENTS</h3>
+     <code>
+        #include&lt;stdio.h&gt;
+            
+        int main(){
+            int size,sum =0;
+             float result;
+             printf("enter the size of array");
+             scanf("%d",&size);
+             int arr[size];
+             printf("enter the %d elements in the array",size);
+             for(int i=0;i&lt;size;i++){
+                 scanf("%d",&arr[i]);
+                 sum +=arr[i];
+                }
+                
+                result= sum/size;
+                printf("average of array elements : %f",result);
+                return 0;
+            }
+            // NOTE : YOU CAN CHANGE FLOAT TO DOUBLE 
+    </code>
+</pre>    
+<pre class="language-c" >
+    <h3>PROGRAM TO CHECK EVEN ODD </h3>
+
+    <code>
+        #include&lt;stdio.h&gt;
+        
+        int main(){
+            int a;
+            printf("enter any number to check even odd ");
+            scanf("%d",&a);
+            if(a%2==0){
+                printf("the number you entered %d is even",a);
+            }
+            else{
+                printf("the number you entered %d is odd",a);
+                
+            }
+            return 0;
+        }
+    </code>
+</pre>     <pre class="language-c" >
+    <h3>FIND FACTORIAL OF A NUMBER</h3>
+
+    <code>
+        #include&lt;stdio.h&gt;
+        
+        int main(){
+            int a,b=1;
+            printf("enter any no for factorial");
+            scanf("%d",&a);
+            for(int i=a;i>0;i--){
+                b *=i;
+            };
+            printf("the factorial of the number you entered is %d",b);
+            return 0;
+        }
+    </code>
+</pre>     <pre class="language-c" >
+    <h3>Fibonacci number generator</h3>
+
+    <code>
+                        #include&lt;stdio.h&gt;
+
+                            int main(){
+                                int first,second,limit,new;
+                                printf("enter the first number");
+                                scanf("%d",&first);
+                                printf("enter the second number");
+                                scanf("%d",&second);
+                                printf("enter the limit ");
+                                scanf("%d",&limit);
+                                printf("the first number you entered is %d",first);
+                                printf("\n the second number you entered is %d",second);
+                                
+                                
+                                for(int i=0;i&lt;limit;i++){
+                                    printf("\n%d",first);
+                                    new=first+second;
+                                    first=second;
+                                    second=new;
+                                }
+                                return 0;
+                            }
+                        </code>
+                    </pre>     <pre class="language-c" >
+                        <H3>CHECK LEAP year</H3>
+                    <code>
+                        #include&lt;stdio.h&gt;
+
+                        int main(){
+                            int year;
+                            printf("enter any year");
+                            scanf("%d",&year);
+                            if(year%4==0){
+                                printf("%d is a leap year",year);
+                            } 
+                            else{
+                                printf("%d is not a leap year",year);
+                            }
+                            return 0;
+                        }
+                    </code>
+                </pre>     <pre class="language-c" >
+                    <H3>FIND MAXIMUM NUMBER </H3>
+
+                    <code>
+                        #include&lt;stdio.h&gt;
+                        
+                        int main(){
+                            int a,b,c,d,e;
+                            char ch;
+                            printf("NOTE:-- YOU CAN ONLY CHECK MAXIMUM NUMBER AMONG 5 NUMBER YOU ENTER");
+                            printf("\n IF YOU WANNA CONTINUE PLEASE PRESS Y/y IF NOT PRESS N/n");
+                                scanf(" %c",&ch);
+                                if(ch=='y' || ch=='Y'){
+                                    printf("enter the five number");
+                                    scanf("%d %d %d %d %d", &a, &b, &c, &d, &e);
+                                    int max=a;
+                                    if(b>max)
+                                    max=b;
+                                    if(c>max)
+                                    max=c;  
+                                    if(d>max)
+                                    max=d;  
+                                    if(e>max)
+                                    max=e;  
+                                    printf("the maximum number among the five number you entered is %d",max);
+                                }
+                                else{
+                                    printf("thankyou for checking the program");
+                                    
+                                }
+                                return 0;
+                            }
+                        </code>
+                 </pre>     <pre class="language-c" >
+                    <H3>CHECK WHEATHER A NUMBER IS PRIME OR NOT </H3>
+
+                    <code>
+                        #include&lt;stdio.h&gt;
+                        
+                        int main (){
+                            int a,flag=0;
+                            printf("enter the number to check whether it is prime or not");
+                            scanf("%d",&a);
+                            if(a&lt;=1){
+                                flag=1;
+                            }
+                            else{
+                                for(int i=2;i&lt;=a/2;i++){
+                                    if(a%i==0){
+                                        flag=1;
+                                        break;
+                                    }
+                                }
+                            }
+                            if(flag==0){
+                                printf("%d is a prime no.",a);
+                            }
+                            else{
+                                printf("%d is not a prime no.",a);
+                            }
+                            return 0;
+                        }
+                         </code>
+                 </pre>     <pre class="language-c" >
+                    <H3>Data Type Size Program</H3>
+
+                    <code>
+                        #include&lt;stdio.h&gt;
+                        
+                        
+                        int main() {
+                            printf("Size of int: %lu bytes\n", sizeof(int));
+                            printf("Size of char: %lu byte\n", sizeof(char));
+                            printf("Size of float: %lu bytes\n", sizeof(float));
+                            printf("Size of double: %lu bytes\n", sizeof(double));
+                            printf("Size of long: %lu bytes\n", sizeof(long));
+                            printf("Size of long long: %lu bytes\n", sizeof(long long));
+                            printf("Size of short: %lu bytes\n", sizeof(short));
+                            printf("Size of unsigned int: %lu bytes\n", sizeof(unsigned int));
+                            printf("Size of unsigned char: %lu byte\n", sizeof(unsigned char));
+                            printf("Size of unsigned long: %lu bytes\n", sizeof(unsigned long));
+                            printf("Size of unsigned long long: %lu bytes\n", sizeof(unsigned long long));
+                            printf("Size of unsigned short: %lu bytes\n", sizeof(unsigned short));
+                            return 0;
+                        }
+                        
+                    </code>
+                </pre>     <pre class="language-c" >
+                    <H3>Dynamic Array Addition Program.</H3>
+                    <code>
+                        #include&lt;stdio.h&gt;
+                        
+                        
+                        int main(){
+                            int size,sum=0;
+                            printf("enter the size of array");
+                            scanf("%d",&size);
+                            int arr[size];
+                            printf("enter %d elements of your array for addition",size);
+                            for(int i=0;i&lt;size;i++){
+                                scanf("%d",&arr[i]);
+                                sum+=arr[i];
+                            }
+                            printf(" the addition of your %d elements you entered is %d",size,sum);
+                            return 0;
+                        }
+                    </code>
+                </pre>     <pre class="language-c" >
+                    <H3>SWAPPING OF TWO NUMBERS</H3>
+                    <code>
+                        #include&lt;stdio.h&gt;
+                        
+                        int main(){
+                            int num1,num2,temp;
+                            printf("enter two number for swapping ");
+                                scanf("%d %d",&num1 , &num2);
+                                printf("the two number before swapping are %d %d",num1,num2);
+                                temp=num1;
+                                num1=num2;
+                                num2=temp;
+                                printf("the two number after swapping are %d %d" ,num1,num2);
+                                return 0;
+                            }
+                        </code>
+                    </pre>     <pre class="language-c" >
+                        <H3>PRINT TABLE OF ANY NUMBER</H3>
+                        <code>
+                            #include&lt;stdio.h&gt;
+                            
+                            int main(){
+                                int a,b,c;
+                                printf("enter the number of which you want table");
+                                scanf("%d",&a);
+                                printf("enter the limit of your table");
+                                scanf("%d",&b);
+                                for(int i=1;i&lt;=b;i++){
+                                    c=a*i;
+                                    printf("\n%d x %d = %d",a,i,c);
+                                }
+                                return 0;
+                            }
+                        </code>
+                    </pre>     <pre class="language-c" >
+                        <H3>convert Fahrenheit into Celsius</H3>
+                        <code>
+                            // this code is used to convert Fahrenheit into Celsius
+                            #include&lt;stdio.h&gt;
+                            int main(){
+                                float fahrenheit,celsius;
+                                printf("enter the temperature in celsius");
+                                scanf("%f",&celsius);
+                                fahrenheit = (celsius *3.24/1.8)+32;
+                                printf("the temperature in fahrenheit is %f",fahrenheit);
+                                return 0;
+                            }
+</code>
+                    </div>
+                        
+                        
+                    </section>
+
+                    <script src="./prism-lib.js"></script>
+                    
+                    
+                </body>
+                </html>

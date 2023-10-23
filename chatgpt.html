@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Program Selector</title>
+    <style>
+        .code-container {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="list" class="main-list">
+        <a href="#" onclick="showProgram('c')"> C</a>
+        <a href="#" onclick="showProgram('c++')">C++</a>
+    </div>
+
+    <div id="c-program" class="code-container">
+        <h3>PROGRAM TO ADD 2 NUMBERS</h3>
+        <code class="language-c">
+            #include <stdio.h>
+            #include <conio.h>
+            int main() {
+                int a, b, c;
+                printf("enter the value of the first number");
+                scanf("%d", &a);
+                printf("enter the value of the second number");
+                scanf("%d", &b);
+                c = a + b;
+                printf("the addition of two numbers you entered is %d", c);
+                return 0;
+            }
+        </code>
+    </div>
+
+    <div id="cpp-program" class="code-container">
+        <h3>PROGRAM TO CHECK EVEN ODD</h3>
+        <code class="language-c">
+            #include <stdio.h>
+            int main() {
+                int a;
+                printf("enter any number to check even odd ");
+                scanf("%d", &a);
+                if (a % 2 == 0) {
+                    printf("the number you entered %d is even", a);
+                } else {
+                    printf("the number you entered %d is odd", a);
+                }
+                return 0;
+            }
+        </code>
+    </div>
+
+    <script>
+        var currentProgram = null;
+
+        function showProgram(program) {
+            if (currentProgram) {
+                document.getElementById(currentProgram).style.display = 'none';
+            }
+
+            currentProgram = program + '-program';
+            document.getElementById(currentProgram).style.display = 'block';
+        }
+    </script>
+</body>
+</html>
