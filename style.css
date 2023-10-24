@@ -268,11 +268,6 @@ animation: moveup 2s linear infinite;
 .short-img:hover{
     height: 6rem;
 }
-header a:hover+.anchor-hover{
-    width: 3rem;
-    color: white;
-  
-}
 .navbar h2{
     display: flex;
     flex: 4 1 20rem;
